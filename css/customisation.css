@@ -1,0 +1,12 @@
+/* CSS Styling for the Customisation pages */
+
+.checkboxgroup {
+	
+	text-align: center;
+}
+.checkboxgroup label {
+	display: block;
+}
+.checkboxgroup input {
+	display: inline-block;
+}
