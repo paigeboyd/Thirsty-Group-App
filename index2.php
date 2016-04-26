@@ -1,14 +1,3 @@
-<?php
- 
-//let's start the session
-session_start();
-    
-//finally, let's store our posted values in the session variables
- if ( isset($_POST['drink'])) {
-$_SESSION['drink'] = $_POST['drink'];
- }
-?>
-
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
@@ -36,11 +25,8 @@ $_SESSION['drink'] = $_POST['drink'];
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
 		<link rel="stylesheet" href="css/skin/cool-gray.css">
-		<link rel="stylesheet" href="css/customisation.css">
         
-        <!-- JS for localstorage -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-        
+
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -79,7 +65,7 @@ $_SESSION['drink'] = $_POST['drink'];
                             <li><a href="CostaDrinksmenu.php">Costa</a></li>
                             <li><a href="NeroDrinksmenu.php">Caffe Nero</a></li>
                             <li><a href="help.html">Help</a></li>    
-                            <li><a href="php/logout.php">Logout</a></li>
+                        <li><a href="php/logout.php">Logout</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                   </div><!-- /.container -->
@@ -96,10 +82,23 @@ $_SESSION['drink'] = $_POST['drink'];
 					<div class="caption text-center text-white" >
 
 							<div class="item">
-								<h1 class="maintitle">Customise <br />
-                                    Your Drink</h1>
-                                <div class="extra-space-l"></div>
-								<a class="btn btn-blank" href="#services-section" role="button">Get Started!</a>
+                                
+                                <?php
+    session_start();
+     if (!isset($_SESSION['username'])){ //redirects to main page
+    header("location: login.html");
+    }
+    else{
+    echo "Welcome, You have now logged in<br />";
+    echo $_SESSION['username'] . "<br /><br />"; 
+    }
+    ?>
+								<h1 class="maintitle">Thirsty?</h1>
+								<p>Pre-order your coffee and beat the queues!</p>
+                                
+                                <div class="extra-space-l">
+                          </div>
+								<a class="btn btn-blank" href="#services-section" role="button">Select a Coffee Shop!</a>
 							</div>
 							
 					</div> <!-- /.caption -->
@@ -115,133 +114,67 @@ $_SESSION['drink'] = $_POST['drink'];
                     <div class="container">
                         <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
                             <br /> <!-- this just adds a bit of breathing space -->
-                            <h2>Drinks Customisation</h2>
+                            <h2>Coffee Shops</h2>
                             <div class="divider"></div>
-                            <p class="subtitle">Select your options from the lists below</p>
+                            <p class="subtitle">Select your favourite Coffee Shop to get started!</p>
                         </div>
                     </div>
                 </div>
                 <!-- End page header-->
             
-            
-        <form id="myform" method="post" action="Ordering.php" name="myemailform" id="myform">
-        
-            
-            <!-- Begin rotate box-2 -->
+                <!-- Begin rotate box-2 -->
                 <div class="rotate-box-2-wrapper">
                     <div class="container">
-                        
-                        <h3>Select your Cup Size:</h3>
-                        
-                <!-- ROW 1 -->
-                        <div class="row">
-                            
-                            
-                            <div class="col-md-3 col-sm-6">
-                                <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0">
-                                    <img class="tall" src="img/customisation/cup2.png">
-                                    <div class="rotate-box-info">
-                                        <input type="radio" name="size" value="Short"  id="size" name="size"/> 
-                                        <label for="button1">Short </label>
-                                        
-                                    </div>
-                                </span>
-                            </div>
-                            
-            
-                            <div class="col-md-3 col-sm-6">
-                                <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.2s">
-                                    <img class="grande" src="img/customisation/cup3.png">
-                                    <div class="rotate-box-info">
-                                        <input type="radio" name="size" value="Grande" id="size" name="size">
-            <label for="img3">Grande </label>
-                                    
-                                    </div>
-                                </span>
-                            </div>
-            
-                            
-                        </div>
-                    </div>
-
-            
-            
-           <h3>Select your Milk:</h3>
-                        
-                <!-- ROW 1 -->
                         <div class="row">
                             <div class="col-md-3 col-sm-6">
-                                <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0">
-                                     <img src="img/customisation/red.png" >
+                                <a href="StarbucksDrinksmenu.php" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0">
+                                    <img src="img/sblogo.png" style="height:150px;">
                                     <div class="rotate-box-info">
-                                         <input type="radio" value="Skimmed Milk" name="milk" id="milk">
-                                        <label class="milk">Skimmed </label>
-                                        
-                                    </div>
-                                </span>
-                            </div>
-                            
-            
-                            <div class="col-md-3 col-sm-6">
-                                <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.2s">
-                                    <img src="img/customisation/blue.png" >
-                                    <div class="rotate-box-info">
-                                         <input type="radio" value="Whole Milk" name="milk" id="milk">
-                                        <label class="milk">Full Fat </label>
-                                    
-                                    </div>
-                                </span>
-                            </div>
-            
-                            <div class="col-md-3 col-sm-6">
-                                <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.4s">
-                                    <img src="img/customisation/soya.png" >
-                                    <div class="rotate-box-info">
-                                         <input type="radio" value="Soya Milk" name="milk" id="milk">
-                                        <label class="milk">Soya </label>
-                                        
-                                    </div>
-                                </span>
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.6s">
-                                   <img src="img/customisation/nomilk.png">
-                                    <div class="rotate-box-info">
-                                          <input type="radio" value="None" name="milk" id="milk">
-                                        <label class="milk">None</label> 
+                                        <h4>Starbucks</h4>
                                         
                                     </div>
                                 </a>
                             </div>
+            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="CostaDrinksmenu.php" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.2s">
+                                    <img src="img/costalogo.png" style="height:150px;">
+                                    <div class="rotate-box-info">
+                                        <h4>Costa</h4>
+                                        
+                                    </div>
+                                </a>
                             </div>
-            <br />
-            <br />    
-        
-            <h3> Select your syrup:</h3>
-        
-            <br />
             
-        <select id="syrup" name="syrup">
-                                <optgroup label="Syrups"></optgroup>
-                                    <option value="Cinnamon Syrup" name="syrup" id="button3">Cinnamon Syrup</option>
-                                    <option value="Hazelnut Syrup" name="syrup" id="button1">Hazelnut Syrup</option>
-                                    <option value="Vanilla Syrup" name="syrup" id="button7">Vanilla Syrup</option>
-                                    <option value="None" name="syrup" id="button8">No Syrup</option>
-                
-    
-							</select>
-            
-            <br />
-            <br />
-            
-      <button class="orderbutton" type="Submit" value="Submit" name="Submit" id="Submit" onclick="location.href='Ordering.php'" style="margin-top:40px; margin-bottom:40px;">Order NOW</button>          
-     </form>    
-              </section>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="NeroDrinksmenu.php" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.4s">
+                                    <img src="img/neromenu/nerologo.jpg" style="height:150px;">
+                                    <div class="rotate-box-info">
+                                        <h4>Caffe Nero</h4>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.6s">
+                                    <img src="img/logo.png" style="height:150px;">
+                                    <div class="rotate-box-info">
+                                        <h4>Coming Soon!</h4>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                                          
+                </div>
+                <!-- End rotate-box-2 -->
+            </section>
             <!-- End Services -->
               
-            </form> 
-          
+              
               
           
                 
@@ -264,44 +197,11 @@ $_SESSION['drink'] = $_POST['drink'];
             <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
                                               
         </div><!-- body ends -->
-
-          <script>
-
-$(document).ready(function() {
-    
-$("#size").val(function () { $("#size").attr("checked", localStorage.getItem("size")); })
-    
-localStorage.setItem("size", $("#size").prop("checked"));
-              
-});
-    
-
-$(document).ready(function() {
-
-$("#milk").val(function () { $("#milk").attr("checked", localStorage.getItem("milk")); })
-
-localStorage.setItem("milk", $("#milk").prop("checked"));
-              
-});
-    
-              
-$(document).ready(function() {
-
-    var item = window.localStorage.getItem('syrup');
-    $('select[name=syrup]').val(item);
-
-    $('select[name=syrup]').change(function() {
-       window.localStorage.setItem('syrup', $(this).val());
-    });
-
-});
-            
-        </script>
-               
+        
         
       
  <!-- keep these at the bottom - plugins used for all animations/scrolling/interactions -->        
-        <!-- Plugins JS -->
+       <!-- Plugins JS -->
 		<script src="inc/jquery/jquery-1.11.1.min.js"></script>
 		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
 		<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
@@ -319,3 +219,4 @@ $(document).ready(function() {
         
             
 </html>
+?>

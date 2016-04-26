@@ -23,9 +23,9 @@ $_SESSION['syrup'] = $_POST['syrup'];
 
         
         <!-- Google Fonts  -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- Main Title Font -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- Main Title Font -->
 
 		<!-- CSS Plugins -->
 		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
@@ -40,6 +40,8 @@ $_SESSION['syrup'] = $_POST['syrup'];
 		<link rel="stylesheet" href="css/mobile.css">
 		<link rel="stylesheet" href="css/skin/cool-gray.css">
         
+        <!-- JS for localstorage -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,18 +70,18 @@ $_SESSION['syrup'] = $_POST['syrup'];
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <img href="index.html" src="img/logo.png" class="navbar-brand page-scroll">
+                      <img href="index2.php" src="img/logo.png" class="navbar-brand page-scroll">
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index2.html">Home</a></li>
-                            <li><a href="StarbucksDrinksmenu.html">Starbucks</a></li>
-                            <li><a href="CostaDrinksmenu.html">Costa</a></li>
-                            <li><a href="NeroDrinksmenu.html">Caffe Nero</a></li>
+                            <li><a href="index2.php">Home</a></li>
+                            <li><a href="StarbucksDrinksmenu.php">Starbucks</a></li>
+                            <li><a href="CostaDrinksmenu.php">Costa</a></li>
+                            <li><a href="NeroDrinksmenu.php">Caffe Nero</a></li>
                             <li><a href="help.html">Help</a></li>    
-   
+                            <li><a href="php/logout.php">Logout</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                   </div><!-- /.container -->
@@ -134,11 +136,11 @@ $_SESSION['syrup'] = $_POST['syrup'];
 					<h3>Personal Details</h3>
                    <br />
                     
-					<label for="FirstName" class="labelpadding">First Name: </label> <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required> * <br />
+					<label for="FirstName" class="labelpadding">First Name: </label> <input type="text" name="FirstName" id="FirstName" class="stored" placeholder="First Name" required> * <br />
                     <br />
-					<label for="LastName" class="labelpadding">Last Name: </label> <input type="text" name="LastName" id="LastName" placeholder="Last Name" required> * <br />
+					<label for="LastName" class="labelpadding">Last Name: </label> <input type="text" name="LastName" id="LastName" class="stored" placeholder="Last Name" required> * <br />
                     <br />
-					<label for="EmailAdd">Email Address: </label> <input type="email" name="EmailAddress" id="EmailAdd" placeholder="Email Address" required> *<br />
+					<label for="EmailAdd">Email Address: </label> <input type="email" name="EmailAddress" id="EmailAddress" class="stored" placeholder="Email Address" required> *<br />
 					
 </fieldset>
                 <br />
@@ -155,7 +157,7 @@ $_SESSION['syrup'] = $_POST['syrup'];
                      <br />
 
 					<label for="Time" class="labelpadding">Pick Up Time:</label> 
-					    <select id="TimeSlot" name="timeslot">
+					    <select id="timeslot" name="timeslot" class="stored">
 								<optgroup label="Morning">
 								<option value="8:00">8:00</option>
 <option value="8:15">8:15</option>
@@ -211,7 +213,7 @@ $_SESSION['syrup'] = $_POST['syrup'];
 						
 
 <label for="location" class="labelpadding">Location:</label> 
-					        <select id="CafeLocation" name="CafeLocation">
+					        <select id="CafeLocation" name="CafeLocation" class="stored">
                                 <optgroup label="Belfast">
 								
                                     <option value="90 Lisburn Road">90 Lisburn Road</option>
@@ -227,13 +229,13 @@ $_SESSION['syrup'] = $_POST['syrup'];
                 <br />
 
 
-				<fieldset type="text" id="additionalcomments" class="text-center wow zoomIn">
+				<fieldset type="text" id="additionalcomments" class="text-center wow zoomIn" class="stored">
                     
 					<h3>Additional Comments</h3>
                 <br />
                     <br />
                     
-						<textarea cols="60" rows="4" placeholder="Enter Comment" id="additionalcomments" name="additionalcomments"> </textarea>
+						<textarea cols="60" rows="4" placeholder="Enter Comment" id="additionalcomments" name="additionalcomments" class="stored"> </textarea>
                     <br /><br />
 						
 						No Comment? <input type="checkbox">
@@ -249,19 +251,10 @@ $_SESSION['syrup'] = $_POST['syrup'];
     <button class="orderbutton" type="reset" value="Clear">Reset</button>
     <button class="orderbutton" type="button" value="back" onclick="window.history.back();">Back</button>
         </div><!--Closes bottom buttons div -->
-        
-        
         </form> 
-                
-                
-                
+
             </section>
             <!-- End Services -->
-              
-            </form>    
-              
-          
-                
 
                 
             <!-- Begin footer -->
@@ -277,6 +270,56 @@ $_SESSION['syrup'] = $_POST['syrup'];
 
             </footer>
             <!-- End footer -->
+        
+                 <script type="text/javascript">
+$(document).ready(function () {
+    function init() {
+        if (localStorage["FirstName"]) {
+          $('#FirstName').val(localStorage["FirstName"]);
+        }
+        if (localStorage["LastName"]) {
+            $('#LastName').val(localStorage["LastName"]);
+        }
+        if (localStorage["EmailAddress"]) {
+            $('#EmailAddress').val(localStorage["EmailAddress"]);
+        }
+        
+        if (localStorage["additionalcomments"]) {        $('#additionalcomments').val(localStorage["additionalcomments"]);
+        }
+    }
+    init();
+});
+              
+$('.stored').keyup(function () {
+    localStorage[$(this).attr('name')] = $(this).val();
+
+});
+                     
+            
+$(document).ready(function() {
+
+    var item = window.localStorage.getItem('timeslot');
+    $('select[name=timeslot]').val(item);
+
+    $('select[name=timeslot]').change(function() {
+       window.localStorage.setItem('timeslot', $(this).val());
+    });
+
+});
+
+$(document).ready(function() {
+
+    var item = window.localStorage.getItem('CafeLocation');
+    $('select[name=CafeLocation]').val(item);
+
+    $('select[name=CafeLocation]').change(function() {
+       window.localStorage.setItem('CafeLocation', $(this).val());
+    });
+
+});
+
+
+</script>  
 
             <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
                                               
@@ -299,7 +342,6 @@ $_SESSION['syrup'] = $_POST['syrup'];
 		<!-- Theme JS -->
 		<script src="js/theme.js"></script>
 
-    </body> 
-        
+    </body>  
             
 </html>

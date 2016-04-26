@@ -20,9 +20,9 @@ $_SESSION['drink'] = $_POST['drink'];
 
         
         <!-- Google Fonts  -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- Main Title Font -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- Main Title Font -->
 
 		<!-- CSS Plugins -->
 		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
@@ -38,7 +38,9 @@ $_SESSION['drink'] = $_POST['drink'];
 		<link rel="stylesheet" href="css/skin/cool-gray.css">
 		<link rel="stylesheet" href="css/customisation.css">
         
-
+        <!-- JS for localstorage -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -66,18 +68,18 @@ $_SESSION['drink'] = $_POST['drink'];
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <img href="index.html" src="img/logo.png" class="navbar-brand page-scroll">
+                      <img href="index2.php" src="img/logo.png" class="navbar-brand page-scroll">
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index2.html">Home</a></li>
-                            <li><a href="StarbucksDrinksmenu.html">Starbucks</a></li>
-                            <li><a href="CostaDrinksmenu.html">Costa</a></li>
-                            <li><a href="NeroDrinksmenu.html">Caffe Nero</a></li>
+                            <li><a href="index2.php">Home</a></li>
+                            <li><a href="StarbucksDrinksmenu.php">Starbucks</a></li>
+                            <li><a href="CostaDrinksmenu.php">Costa</a></li>
+                            <li><a href="NeroDrinksmenu.php">Caffe Nero</a></li>
                             <li><a href="help.html">Help</a></li>    
-   
+                            <li><a href="php/logout.php">Logout</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                   </div><!-- /.container -->
@@ -137,7 +139,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0">
                                     <img class="short" src="img/customisation/cup1.png"> 
                                     <div class="rotate-box-info">
-                                        <input type="radio" name="size" value="Short"  id="button1" name="size" /> 
+                                        <input type="radio" name="size" value="Short"  id="size" name="size" class="stored" /> 
                                     <label for="img1">Short </label>
                                         
                                     </div>
@@ -149,7 +151,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.2s">
                                     <img class="tall" src="img/customisation/cup2.png">
                                     <div class="rotate-box-info">
-                                        <input type="radio" name="size" value="Tall" id="button2" name="size">
+                                        <input type="radio" name="size" value="Tall" id="size" name="size" class="stored">
             <label for="img2">Primo </label>
                                     
                                     </div>
@@ -160,7 +162,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.4s">
                                     <img class="grande" src="img/customisation/cup3.png">
                                     <div class="rotate-box-info">
-                                         <input type="radio" name="size" value="Grande" id="button3" name="size">
+                                         <input type="radio" name="size" value="Grande" id="size" name="size" class="stored">
             <label for="img3">Medio </label>
                                         
                                     </div>
@@ -171,7 +173,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.6s">
                                    <img class="grande" src="img/customisation/cup4.png">
                                     <div class="rotate-box-info">
-                                         <input type="radio" name="size" value="Venti" id="button4" name="size">
+                                         <input type="radio" name="size" value="Venti" id="size" name="size" class="stored">
             <label for="img3">Assimo </label>
                                         
                                     </div>
@@ -190,7 +192,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0">
                                      <img src="img/customisation/red.png" >
                                     <div class="rotate-box-info">
-                                         <input type="radio" value="Skimmed Milk" name="milk" id="button1">
+                                         <input type="radio" value="Skimmed Milk" name="milk" id="milk" class="stored">
                                         <label class="milk">Skimmed </label>
                                         
                                     </div>
@@ -202,7 +204,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.2s">
                                     <img src="img/customisation/blue.png" >
                                     <div class="rotate-box-info">
-                                         <input type="radio" value="Whole Milk" name="milk" id="button3">
+                                         <input type="radio" value="Whole Milk" name="milk" id="milk" class="stored">
                                         <label class="milk">Full Fat </label>
                                     
                                     </div>
@@ -213,7 +215,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <span href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.4s">
                                     <img src="img/customisation/coconut.png" >
                                     <div class="rotate-box-info">
-                                         <input type="radio" value="Soya Milk" name="milk" id="button5">
+                                         <input type="radio" value="Soya Milk" name="milk" id="milk" class="stored">
                                         <label class="milk">Soya </label>
                                         
                                     </div>
@@ -224,7 +226,7 @@ $_SESSION['drink'] = $_POST['drink'];
                                 <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.6s">
                                    <img src="img/customisation/nomilk.png">
                                     <div class="rotate-box-info">
-                                          <input type="radio" value="None" name="milk" id="button5">
+                                          <input type="radio" value="None" name="milk" id="milk" class="stored">
                                         <label class="milk">None</label> 
                                         
                                     </div>
@@ -238,7 +240,7 @@ $_SESSION['drink'] = $_POST['drink'];
         
             <br />
             
-        <select id="syrup" name="syrup">
+        <select id="syrup" name="syrup" class="stored">
                                 <optgroup label="Syrup">
 								
                                     <option value="Vanilla Syrup" name="syrup" id="button1">Vanilla Syrup</option>
@@ -287,7 +289,40 @@ $_SESSION['drink'] = $_POST['drink'];
             <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
                                               
         </div><!-- body ends -->
-        
+
+          <script>
+
+$(document).ready(function() {
+    
+$("#size").val(function () { $("#size").attr("checked", localStorage.getItem("size")); })
+    
+localStorage.setItem("size", $("#size").prop("checked"));
+              
+});
+    
+
+$(document).ready(function() {
+    
+$("#milk").val(function () { $("#milk").attr("checked", localStorage.getItem("milk")); })
+
+localStorage.setItem("milk", $("#milk").prop("checked"));
+              
+
+});
+    
+              
+$(document).ready(function() {
+
+    var item = window.localStorage.getItem('syrup');
+    $('select[name=syrup]').val(item);
+
+    $('select[name=syrup]').change(function() {
+       window.localStorage.setItem('syrup', $(this).val());
+    });
+
+});
+            
+        </script>
         
       
  <!-- keep these at the bottom - plugins used for all animations/scrolling/interactions -->        

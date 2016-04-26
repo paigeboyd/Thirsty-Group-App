@@ -14,9 +14,9 @@
 
         
         <!-- Google Fonts  -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- Main Title Font -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- Main Title Font -->
 
 		<!-- CSS Plugins -->
 		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
@@ -65,12 +65,12 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index2.html">Home</a></li>
-                            <li><a href="StarbucksDrinksmenu.html">Starbucks</a></li>
-                            <li><a href="CostaDrinksmenu.html">Costa</a></li>
-                            <li><a href="NeroDrinksmenu.html">Caffe Nero</a></li>
+                            <li><a href="index2.php">Home</a></li>
+                            <li><a href="StarbucksDrinksmenu.php">Starbucks</a></li>
+                            <li><a href="CostaDrinksmenu.php">Costa</a></li>
+                            <li><a href="NeroDrinksmenu.php">Caffe Nero</a></li>
                             <li><a href="help.html">Help</a></li>    
-   
+                            <li><a href="php/logout.php">Logout</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                   </div><!-- /.container -->
