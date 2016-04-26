@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages>
+    <link>
+    <title>Espresso</title>
+    <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#espresso</url>
+    </link>
+    
+    <link>
+    <title>Espresso Ristretto</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#espresso</url>
+    </link>
+    
+    <link>
+    <title>Espresso Macchiato</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#espresso</url>
+    </link>
+    
+    <link>
+    <title>Espresso Con Panna</title>
+    <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#espresso</url>
+    </link>
+    
+    <link>
+    <title>Cappuccino</title>
+    <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#cappuccino</url>
+    </link>
+    
+    <link>
+    <title>Cafe Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#cappuccino</url>
+    </link>
+    
+    <link>
+    <title>Americano</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#cappuccino</url>
+    </link>
+    
+    <link>
+    <title>Hot Chocolate</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#hot-chocolate</url>
+    </link>
+    
+    <link>
+    <title>Caramel Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#hot-chocolate</url>
+    </link>
+    
+    <link>
+    <title>Hot Chocolate Milano</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#hot-chocolate</url>
+    </link>
+    
+    <link>
+    <title>White Chocolate Mocha</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#hot-chocolate</url>
+    </link>
+    
+    <link>
+    <title>Caffe Mocha</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#caffe-mocha</url>
+    </link>
+    
+    <link>
+    <title>Chai Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#caffe-mocha</url>
+    </link>
+    
+    <link>
+    <title>Tea</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#caffe-mocha</url>
+    </link>
+    
+    <link>
+    <title>Coffee Creme Frappe</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#coffee-creme-frappe</url>
+    </link>
+    
+    <link>
+    <title>Coconut Creme Frappe</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#coffee-creme-frappe</url>
+    </link>
+    
+    <link>
+    <title>Banana &amp; Caramel Frappe</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#coffee-creme-frappe</url>
+    </link>
+    
+    <link>
+    <title>Mocha Frappe Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#mocha-frappe-latte</url>
+    </link>
+    
+    <link>
+    <title>Caramel Frappe Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#mocha-frappe-latte</url>
+    </link>
+    
+    <link>
+    <title>Iced Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#mocha-frappe-latte</url>
+    </link>
+    
+    <link>
+    <title>Iced Coffee</title>
+        <url>https://scm.ulster.ac.uk/~team8/MVP3/NeroDrinksmenu.php#mocha-frappe-latte</url>
+    </link>
+</pages>

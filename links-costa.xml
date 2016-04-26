@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages>
+    <link>
+    <title>Traditional Tea</title>
+    <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#traditional-tea</url>
+    </link>
+    
+    <link>
+    <title>English Decaffeinated Tea</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#traditional-tea</url>
+    </link>
+    
+    <link>
+    <title>Green Tea</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#traditional-tea</url>
+    </link>
+    
+    <link>
+    <title>Chamomile &amp; Ginger Tea</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#traditional-tea</url>
+    </link>
+    
+    <link>
+    <title>Mint Tea</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#mint-tea</url>
+    </link>
+    
+    <link>
+    <title>Earl Grey Tea</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#mint-tea</url>
+    </link>
+    
+    <link>
+    <title>Flat White</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#flat-white</url>
+    </link>
+    
+    <link>
+    <title>Cappuccino</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#flat-white</url>
+    </link>
+    
+    <link>
+    <title>Cafe Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#flat-white</url>
+    </link>
+    
+    <link>
+    <title>Americano</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#flat-white</url>
+    </link>
+    
+    <link>
+    <title>Cortado</title>
+    <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#cortado</url>
+    </link>
+    
+    <link>
+    <title>Espresso</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#cortado</url>
+    </link>
+    
+    <link>
+    <title>Mocha Cortado</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#mocha-cortado</url>
+    </link>
+    
+    <link>
+    <title>Mocha Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#mocha-cortado</url>
+    </link>
+    
+    <link>
+    <title>Mocha</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#mocha-cortado</url>
+    </link>
+    
+    <link>
+    <title>Hot Chocolate</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#mocha-cortado</url>
+    </link>
+    
+    <link>
+    <title>Iced Cappuccino</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-cappuccino</url>
+    </link>
+    
+    <link>
+    <title>Iced Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-cappuccino</url>
+    </link>
+    
+    <link>
+    <title>Iced Cortado</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-cappuccino</url>
+    </link>
+    
+    <link>
+    <title>Iced Americano</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-cappuccino</url>
+    </link>
+    
+    <link>
+    <title>Iced Caramel Latte</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-caramel-latte</url>
+    </link>
+    
+    <link>
+    <title>Iced Chocolate</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-caramel-latte</url>
+    </link>
+    
+    <link>
+    <title>Iced Ristretto</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-caramel-latte</url>
+    </link>
+    
+    <link>
+    <title>Iced Macchiato</title>
+        <url>https://scm.ulster.ac.uk/~team8/mvp3/CostaDrinksmenu.php#iced-caramel-latte</url>
+    </link>
+    
+</pages>
